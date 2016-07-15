@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root prefHeight="259.0" prefWidth="432.0" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <StackPane prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label prefHeight="34.0" prefWidth="362.0" text="Seleccione el reloj checador de donde desea realizar la difusión de la información del empleado." wrapText="true" StackPane.alignment="TOP_LEFT">
+               <StackPane.margin>
+                  <Insets left="15.0" top="40.0" />
+               </StackPane.margin>
+            </Label>
+            <RadioButton fx:id="rbtEntradaCoorporativo" mnemonicParsing="false" text="Entrada Coorporativo" StackPane.alignment="TOP_LEFT">
+               <StackPane.margin>
+                  <Insets left="15.0" top="85.0" />
+               </StackPane.margin>
+            </RadioButton>
+            <RadioButton fx:id="rbtComedorCoorporativo" mnemonicParsing="false" text="Comedor Coorporativo" StackPane.alignment="TOP_LEFT">
+               <StackPane.margin>
+                  <Insets left="15.0" top="110.0" />
+               </StackPane.margin>
+            </RadioButton>
+            <RadioButton fx:id="rbtEntradaCEDIS" mnemonicParsing="false" text="Entrada CEDIS" StackPane.alignment="TOP_LEFT">
+               <StackPane.margin>
+                  <Insets left="15.0" top="135.0" />
+               </StackPane.margin>
+            </RadioButton>
+            <RadioButton fx:id="rbtComedorCEDIS" mnemonicParsing="false" text="Comedor CEDIS" StackPane.alignment="TOP_LEFT">
+               <StackPane.margin>
+                  <Insets left="15.0" top="160.0" />
+               </StackPane.margin>
+            </RadioButton>
+            <Label fx:id="lblEmpleado" text="Empleado: " StackPane.alignment="TOP_LEFT">
+               <StackPane.margin>
+                  <Insets left="20.0" top="200.0" />
+               </StackPane.margin>
+            </Label>
+            <Button fx:id="btnSync" defaultButton="true" mnemonicParsing="false" onAction="#btnSync_OnAction" text="Sincronizar" StackPane.alignment="BOTTOM_RIGHT">
+               <StackPane.margin>
+                  <Insets bottom="10.0" right="10.0" />
+               </StackPane.margin>
+            </Button>
+         </children>
+      </StackPane>
+      <Label layoutX="10.0" layoutY="10.0" text="Sincronización de información de empleado" textFill="#008287">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</fx:root>

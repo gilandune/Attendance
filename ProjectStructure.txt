@@ -1,0 +1,10 @@
+ATTENDANCE
+    |
+    |------UserInterface (Eclipse Workspace)
+    |		|-------AttendanceUI
+    |------BackEnd (.Net ProjectFolder)
+    |	        |-------AttendanceService (.Net SolutionFolder)
+    |------DataBase
+    |		|-------Schema
+    |------WebApplication (.Net ProjectFolder)
+    |		|-------AttendanceKiosk (.Net SolutionFolder)

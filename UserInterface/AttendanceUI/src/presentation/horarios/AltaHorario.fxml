@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root prefHeight="328.0" prefWidth="413.0" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <StackPane prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="Titulo" text="Alta Horario" textFill="#008287" StackPane.alignment="TOP_LEFT">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <StackPane.margin>
+                  <Insets left="10.0" top="10.0" />
+               </StackPane.margin>
+            </Label>
+            <VBox prefHeight="400.0" prefWidth="0.0" spacing="10.0">
+               <StackPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="50.0" />
+               </StackPane.margin>
+               <children>
+                  <HBox prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <Label prefHeight="25.0" text="Descripcion:" />
+                        <TextField fx:id="txtDescripcion" prefHeight="25.0" prefWidth="309.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <CheckBox fx:id="chkLunes" mnemonicParsing="false" onAction="#chkLunes_OnAction" prefHeight="25.0" prefWidth="80.0" text="Lunes" />
+                        <Label prefHeight="25.0" text="Entrada:">
+                        </Label>
+                        <TextField fx:id="LunesHoraEnt" prefHeight="25.0" prefWidth="35.0" />
+                        <Label prefHeight="25.0" text=":" />
+                        <TextField fx:id="LunesMinutoEnt" prefHeight="25.0" prefWidth="35.0" />
+                        <Label prefHeight="25.0" text="Salida:" />
+                        <TextField fx:id="LunesHoraSal" prefHeight="25.0" prefWidth="35.0" />
+                        <Label prefHeight="25.0" text=":" />
+                        <TextField fx:id="LunesMinutoSal" prefHeight="25.0" prefWidth="35.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <CheckBox fx:id="chkMartes" mnemonicParsing="false" onAction="#chkMartes_OnAction" prefHeight="25.0" prefWidth="80.0" text="Martes" />
+                        <Label prefHeight="25.0" text="Entrada:">
+                        </Label>
+                        <TextField fx:id="MartesHoraEnt" prefHeight="25.0" prefWidth="35.0" />
+                        <Label prefHeight="25.0" text=":" />
+                        <TextField fx:id="MartesMinutoEnt" prefHeight="25.0" prefWidth="35.0" />
+                        <Label prefHeight="25.0" text="Salida:" />
+                        <TextField fx:id="MartesHoraSal" prefHeight="25.0" prefWidth="35.0" />
+                        <Label prefHeight="25.0" text=":" />
+                        <TextField fx:id="MartesMinutoSal" prefHeight="25.0" prefWidth="35.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <CheckBox fx:id="chkMiercoles" mnemonicParsing="false" onAction="#chkMiercoles_OnAction" prefHeight="25.0" prefWidth="80.0" text="Miércoles" />
+                        <Label prefHeight="25.0" text="Entrada:" />
+                        <TextField fx:id="MiercolesHoraEnt" prefHeight="25.0" prefWidth="35.0" />
+                        <Label prefHeight="25.0" text=":" />
+                        <TextField fx:id="MiercolesMinutoEnt" prefHeight="25.0" prefWidth="35.0" />
+                        <Label prefHeight="25.0" text="Salida:" />
+                        <TextField fx:id="MiercolesHoraSal" prefHeight="25.0" prefWidth="35.0" />
+                        <Label prefHeight="25.0" text=":" />
+                        <TextField fx:id="MiercolesMinutoSal" prefHeight="25.0" prefWidth="35.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <CheckBox fx:id="chkJueves" mnemonicParsing="false" onAction="#chkJueves_OnAction" prefHeight="25.0" prefWidth="80.0" text="Jueves" />
+                        <Label prefHeight="25.0" text="Entrada:" />
+                        <TextField fx:id="JuevesHoraEnt" prefHeight="25.0" prefWidth="35.0" />
+                        <Label prefHeight="25.0" text=":" />
+                        <TextField fx:id="JuevesMinutoEnt" prefHeight="25.0" prefWidth="35.0" />
+                        <Label prefHeight="25.0" text="Salida:" />
+                        <TextField fx:id="JuevesHoraSal" prefHeight="25.0" prefWidth="35.0" />
+                        <Label prefHeight="25.0" text=":" />
+                        <TextField fx:id="JuevesMinutoSal" prefHeight="25.0" prefWidth="35.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <CheckBox fx:id="chkViernes" mnemonicParsing="false" onAction="#chkViernes_OnAction" prefHeight="25.0" prefWidth="80.0" text="Viernes" />
+                        <Label prefHeight="25.0" text="Entrada:" />
+                        <TextField fx:id="ViernesHoraEnt" prefHeight="25.0" prefWidth="35.0" />
+                        <Label prefHeight="25.0" text=":" />
+                        <TextField fx:id="ViernesMinutoEnt" prefHeight="25.0" prefWidth="35.0" />
+                        <Label prefHeight="25.0" text="Salida:" />
+                        <TextField fx:id="ViernesHoraSal" prefHeight="25.0" prefWidth="35.0" />
+                        <Label prefHeight="25.0" text=":" />
+                        <TextField fx:id="ViernesMinutoSal" prefHeight="25.0" prefWidth="35.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <CheckBox fx:id="chkSabado" mnemonicParsing="false" onAction="#chkSabado_OnAction" prefHeight="25.0" prefWidth="80.0" text="Sábado" />
+                        <Label prefHeight="25.0" text="Entrada:" />
+                        <TextField fx:id="SabadoHoraEnt" prefHeight="25.0" prefWidth="35.0" />
+                        <Label prefHeight="25.0" text=":" />
+                        <TextField fx:id="SabadoMinutoEnt" prefHeight="25.0" prefWidth="35.0" />
+                        <Label prefHeight="25.0" text="Salida:" />
+                        <TextField fx:id="SabadoHoraSal" prefHeight="25.0" prefWidth="35.0" />
+                        <Label prefHeight="25.0" text=":" />
+                        <TextField fx:id="SabadoMinutoSal" prefHeight="25.0" prefWidth="35.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <CheckBox fx:id="chkDomingo" mnemonicParsing="false" onAction="#chkDomingo_OnAction" prefHeight="25.0" prefWidth="80.0" text="Domingo" />
+                        <Label prefHeight="25.0" text="Entrada:" />
+                        <TextField fx:id="DomingoHoraEnt" prefHeight="25.0" prefWidth="35.0" />
+                        <Label prefHeight="25.0" text=":" />
+                        <TextField fx:id="DomingoMinutoEnt" prefHeight="25.0" prefWidth="35.0" />
+                        <Label prefHeight="25.0" text="Salida:" />
+                        <TextField fx:id="DomingoHoraSal" prefHeight="25.0" prefWidth="35.0" />
+                        <Label prefHeight="25.0" text=":" />
+                        <TextField fx:id="DomingoMinutoSal" prefHeight="25.0" prefWidth="35.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_RIGHT" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="btnCancelar" cancelButton="true" mnemonicParsing="false" onAction="#btnCancelar_OnAction" text="Cancelar" />
+                        <Button fx:id="btnAceptar" defaultButton="true" mnemonicParsing="false" onAction="#btnAceptar_OnAction" text="Aceptar" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </children>
+</fx:root>

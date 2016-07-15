@@ -1,0 +1,5 @@
+<configuracion>
+	<rutaServicio>
+		http://localhost/AttendanceService/AttendanceService.svc
+	</rutaServicio>
+</configuracion>

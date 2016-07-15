@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<fx:root prefWidth="330.0" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+      		<StackPane blendMode="MULTIPLY" layoutY="-1.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="Alta de Empleado Externo" textFill="#008287" StackPane.alignment="TOP_LEFT">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <StackPane.margin>
+                  <Insets left="10.0" top="10.0" />
+               </StackPane.margin>
+            </Label>
+            <VBox prefWidth="100.0" spacing="10.0" StackPane.alignment="TOP_LEFT">
+               <StackPane.margin>
+                  <Insets bottom="10.0" left="15.0" right="15.0" top="50.0" />
+               </StackPane.margin>
+               <children>
+                  <HBox alignment="TOP_RIGHT" prefWidth="200.0" spacing="10.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <children>
+                        <Label prefHeight="25.0" text="Empleado:" />
+                        <TextField fx:id="txtNombreEmpleado" prefWidth="200.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_RIGHT" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <Label prefHeight="25.0" text="Num. Tarjeta:" />
+                        <TextField fx:id="txtNumTarjeta" prefWidth="200.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_RIGHT" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <Label prefHeight="25.0" text="Horario:" />
+                        <ChoiceBox fx:id="cmbHorario" prefWidth="200.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_RIGHT" prefHeight="50.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="btnCancelar" cancelButton="true" mnemonicParsing="false" onAction="#btnCancelar_OnAction" text="Cancelar" />
+                        <Button fx:id="btnAceptar" defaultButton="true" mnemonicParsing="false" onAction="#btnAceptar_OnAction" text="Aceptar" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+		</StackPane>
+	</children>
+</fx:root>
